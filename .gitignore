@@ -1,0 +1,7 @@
+.idea
+.code
+.coverage
+*.pyc
+.pytest_cahce
+venv
+assets
