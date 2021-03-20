@@ -4,7 +4,6 @@
 # @File : muliti_factory_method_pattern.py 
 # @Software: PyCharm
 import abc
-from typing import Union
 
 
 class AbsHuman(metaclass=abc.ABCMeta):
