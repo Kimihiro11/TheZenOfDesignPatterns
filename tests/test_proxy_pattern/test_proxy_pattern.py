@@ -7,6 +7,7 @@ from DesignPatterns.ProxyPattern import Client
 from DesignPatterns.ProxyPattern.common_proxy_pattern import Client as CommonClient
 from DesignPatterns.ProxyPattern.force_proxy_pattern import Client as ForceClient
 from DesignPatterns.ProxyPattern.personalized_proxy_pattern import Client as PerClient
+from DesignPatterns.ProxyPattern.dynamic_proxy_pattern import Client as DyClient
 
 
 def test_proxy_pattern():
@@ -37,3 +38,9 @@ def test_personalized_proxy():
     gamer, proxy = per_client.main()
     assert gamer.level == 1
     assert proxy._count == 100
+
+
+def test_dynamic_proxy():
+    dy_client = DyClient()
+    dy_client = dy_client.main()
+    assert dy_client.level == 1
